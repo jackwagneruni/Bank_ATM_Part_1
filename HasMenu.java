@@ -1,3 +1,4 @@
-interface HasMenu 
-  string menu()
-  void start()
+public interface HasMenu {
+  String menu();
+  void start();
+}
