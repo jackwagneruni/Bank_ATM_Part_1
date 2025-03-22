@@ -43,9 +43,16 @@ public class Customer extends User {
     
 
     private int getChoice() {
-        // Replace with actual code for getting user input
-        return 1; // Temporary stub for compilation
+        java.util.Scanner scanner = new java.util.Scanner(System.in);
+        int choice = -1;
+        try {
+            choice = Integer.parseInt(scanner.nextLine());
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid input, please enter a number.");
+        }
+        return choice;
     }
+
 
     private void changePin() {
         System.out.println("Changing PIN...");
